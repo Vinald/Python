@@ -1,3 +1,4 @@
+import random
 # Example 1
 class Person:
     def __init__(self, name=None, marks=None):
@@ -30,3 +31,14 @@ v2 = Vector(3, 4)
 
 v3 = v1 + v2
 print(v3)
+
+# Class Method
+class Hat:
+    houses = ['seeta', 'mukono', 'kireka']
+    
+    @classmethod
+    def sorting(cls, name):
+        print(f'{name} is in {random.choice(cls.houses)}')
+
+ 
+Hat.sorting('samuel')
